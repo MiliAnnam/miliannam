@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MiliAnnam Healthy Snacking | Real Ingredients. Unapologetic Crunch.</title>
+  <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              cream: '#FAF6ED',
+              sand: '#F4ECE1',
+              charcoal: '#2B2118',
+              espresso: '#1E1711',
+              amber: '#D97706',
+              terracotta: '#B45309',
+              spice: '#C2410C',
+              teal: '#0D6E6E',
+              tealDark: '#094E4E',
+              leaf: '#70A83B',
+              leafBorder: '#0B6B28',
+              cardbg: '#FFFFFF'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          boxShadow: {
+            'warm': '0 10px 25px -5px rgba(43, 33, 24, 0.08), 0 8px 10px -6px rgba(43, 33, 24, 0.04)',
+            'warm-lg': '0 20px 35px -10px rgba(43, 33, 24, 0.15)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #FAF6ED;
+      color: #2B2118;
+      overflow-x: hidden;
+    }
+    .font-display {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    @keyframes subtle-float {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-6px) rotate(0.8deg); }
+    }
+    .animate-float {
+      animation: subtle-float 5s ease-in-out infinite;
+    }
+    .drawer-backdrop {
+      background: rgba(30, 23, 17, 0.65);
+      backdrop-filter: blur(4px);
+    }
+  </style>
+</head>
+<body class="relative min-h-screen flex flex-col selection:bg-amber-200 selection:text-brand-charcoal">
+
+  <!-- ================= TOP ANNOUNCEMENT BAR ================= -->
+  <div class="bg-brand-charcoal text-amber-100 text-xs sm:text-sm font-medium py-2 px-4 text-center tracking-wide flex items-center justify-center gap-2 border-b border-amber-900/30">
+    <span class="inline-flex items-center gap-1.5 bg-amber-600/30 text-amber-300 px-2 py-0.5 rounded-full text-[11px] font-semibold uppercase tracking-wider">
+      Launch Offer
+    </span>
+    <span>Use code <strong class="text-amber-400 font-bold tracking-wider">CRUNCH10</strong> for 10% off • Free Delivery on orders over ₹499!</span>
+  </div>
+
+  <!-- ================= STICKY HEADER & NAVBAR ================= -->
+  <header class="sticky top-0 z-40 bg-[#FAF6ED]/95 backdrop-blur-md border-b border-stone-200 shadow-sm transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo - Perfectly aligned and proportional -->
+      <a href="#" class="flex items-center gap-3 group focus:outline-none py-1">
+        <!-- SVG Brand Emblem reproducing your official logo mark -->
+        <div class="w-12 h-12 flex-shrink-0 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+          <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Teal Droplet Ring -->
+            <path d="M50 12 C50 12 65 30 65 42 C65 50.28 58.28 57 50 57 C41.72 57 35 50.28 35 42 C35 30 50 12 50 12 Z" 
+                  fill="#0D6E6E"/>
+            <path d="M50 24 C50 24 57 34 57 41 C57 44.87 53.87 48 50 48 C46.13 48 43 44.87 43 41 C43 34 50 24 50 24 Z" 
+                  fill="#FAF6ED"/>
+            <!-- Left Leaf -->
+            <path d="M50 59 C41 53 23 45 22 66 C22 81 44 82 50 59 Z" 
+                  fill="#70A83B" stroke="#0B6B28" stroke-width="2.5" stroke-linejoin="round"/>
+            <path d="M50 59 C40 64 31 69 25 70" 
+                  stroke="#0B6B28" stroke-width="1.8" stroke-linecap="round"/>
+            <!-- Right Leaf -->
+            <path d="M50 59 C59 53 77 45 78 66 C78 81 56 82 50 59 Z" 
+                  fill="#70A83B" stroke="#0B6B28" stroke-width="2.5" stroke-linejoin="round"/>
+            <path d="M50 59 C60 64 69 69 75 70" 
+                  stroke="#0B6B28" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <!-- Typography: Bespoke Serif Name & Subtitle -->
+        <div class="flex flex-col justify-center leading-none">
+          <span class="text-2xl sm:text-[1.75rem] font-black tracking-tight font-display text-brand-charcoal group-hover:text-brand-spice transition-colors">
+            MiliAnnam
+          </span>
+          <span class="text-[9.5px] sm:text-[10px] font-extrabold uppercase tracking-[0.24em] text-brand-teal mt-1">
+            Healthy Snacking
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center space-x-7 text-sm font-semibold text-stone-700">
+        <a href="#catalog-section" class="hover:text-brand-spice transition-colors">Shop Snacks</a>
+        <a href="#bundle-builder" class="hover:text-brand-spice transition-colors flex items-center gap-1.5">
+          Custom Box 
+          <span class="bg-amber-100 text-brand-spice text-[10px] font-bold px-2 py-0.5 rounded-full border border-amber-300">Save 15%</span>
+        </a>
+        <a href="#why-section" class="hover:text-brand-spice transition-colors">Why MiliAnnam</a>
+        <a href="#quality-section" class="hover:text-brand-spice transition-colors">Nutrition & Purity</a>
+        <a href="#reviews-section" class="hover:text-brand-spice transition-colors">Verified Reviews</a>
+      </nav>
+
+      <!-- Search & Cart Utilities -->
+      <div class="flex items-center gap-3">
+        <!-- Live Quick Search -->
+        <div class="relative hidden sm:block w-48 lg:w-60">
+          <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="Search snacks, spices..." 
+            class="w-full pl-9 pr-4 py-2 text-xs rounded-full bg-white border border-stone-300 focus:outline-none focus:ring-2 focus:ring-brand-teal focus:border-transparent transition-all shadow-inner"
+            oninput="handleSearch(this.value)"
+          />
+          <i data-lucide="search" class="w-4 h-4 text-stone-400 absolute left-3 top-2.5"></i>
+        </div>
+
+        <!-- Cart Button with Dynamic Badge -->
+        <button 
+          id="cartBtn" 
+          onclick="toggleCartDrawer(true)" 
+          class="relative p-2.5 bg-white border border-stone-200 hover:border-brand-teal text-brand-charcoal rounded-full transition-all duration-200 shadow-sm flex items-center justify-center hover:bg-amber-50 group focus:outline-none"
+          aria-label="View Shopping Cart"
+        >
+          <i data-lucide="shopping-bag" class="w-5 h-5 group-hover:scale-110 transition-transform text-brand-charcoal"></i>
+          <span id="cartCountBadge" class="absolute -top-1 -right-1 w-5 h-5 bg-brand-spice text-white font-bold text-[11px] rounded-full flex items-center justify-center ring-2 ring-brand-cream transform scale-0 transition-transform duration-200">
+            0
+          </span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button 
+          onclick="toggleMobileMenu()" 
+          class="p-2 md:hidden text-stone-700 hover:text-stone-900 rounded-lg hover:bg-stone-200/60"
+          aria-label="Toggle Navigation"
+        >
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-stone-200 px-6 py-4 space-y-3">
+      <div class="relative w-full mb-3">
+        <input 
+          type="text" 
+          placeholder="Search snacks..." 
+          class="w-full pl-9 pr-4 py-2 text-sm rounded-full bg-stone-100 border border-stone-300 focus:outline-none focus:ring-2 focus:ring-brand-teal"
+          oninput="handleSearch(this.value)"
+        />
+        <i data-lucide="search" class="w-4 h-4 text-stone-400 absolute left-3 top-2.5"></i>
+      </div>
+      <a href="#catalog-section" onclick="toggleMobileMenu()" class="block text-stone-800 font-semibold py-1">Shop Snacks</a>
+      <a href="#bundle-builder" onclick="toggleMobileMenu()" class="block text-brand-spice font-semibold py-1">Custom Box (Save 15%)</a>
+      <a href="#why-section" onclick="toggleMobileMenu()" class="block text-stone-800 font-semibold py-1">Why MiliAnnam</a>
+      <a href="#quality-section" onclick="toggleMobileMenu()" class="block text-stone-800 font-semibold py-1">Nutrition & Purity</a>
+      <a href="#reviews-section" onclick="toggleMobileMenu()" class="block text-stone-800 font-semibold py-1">Customer Reviews</a>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="relative pt-8 pb-16 lg:pt-16 lg:pb-24 overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none opacity-5">
+      <div class="w-96 h-96 rounded-full border-8 border-brand-teal absolute -top-20 -left-20"></div>
+      <div class="w-[500px] h-[500px] rounded-full border-8 border-brand-spice absolute top-40 -right-20"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Hero Text Content (7 cols) -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-300 text-brand-teal font-bold text-xs uppercase tracking-wider">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-brand-teal"></i>
+            The 100% Roasted Multigrain Revolution
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-brand-charcoal font-display leading-[1.12]">
+            Real Ingredients.<br/>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-spice via-amber-700 to-brand-charcoal">
+              Unapologetic Crunch.
+            </span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-stone-700 max-w-xl font-medium leading-relaxed">
+            Crafted from ancient Indian millets (Ragi, Jowar, Bajra) and whole grains. Slow-roasted in small batches with cold-pressed mustard & aromatic spices. <strong>Zero palm oil. Never deep-fried.</strong>
+          </p>
+
+          <!-- Key Trust Badges Pills -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-2">
+            <div class="flex items-center gap-2 p-2.5 rounded-xl bg-white/80 border border-stone-200/90 shadow-sm">
+              <i data-lucide="flame-kindling" class="w-4 h-4 text-brand-spice flex-shrink-0"></i>
+              <span class="text-xs font-bold text-stone-800">Roasted Not Fried</span>
+            </div>
+            <div class="flex items-center gap-2 p-2.5 rounded-xl bg-white/80 border border-stone-200/90 shadow-sm">
+              <i data-lucide="shield-check" class="w-4 h-4 text-brand-leaf flex-shrink-0"></i>
+              <span class="text-xs font-bold text-stone-800">0% Palm Oil</span>
+            </div>
+            <div class="flex items-center gap-2 p-2.5 rounded-xl bg-white/80 border border-stone-200/90 shadow-sm">
+              <i data-lucide="wheat" class="w-4 h-4 text-brand-amber flex-shrink-0"></i>
+              <span class="text-xs font-bold text-stone-800">8g Protein / 100g</span>
+            </div>
+            <div class="flex items-center gap-2 p-2.5 rounded-xl bg-white/80 border border-stone-200/90 shadow-sm">
+              <i data-lucide="badge-check" class="w-4 h-4 text-brand-teal flex-shrink-0"></i>
+              <span class="text-xs font-bold text-stone-800">FSSAI Certified</span>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
+            <a href="#catalog-section" class="px-8 py-4 rounded-xl bg-gradient-to-r from-brand-charcoal to-stone-900 text-white font-bold text-center shadow-lg hover:shadow-xl hover:from-stone-900 hover:to-black transition-all flex items-center justify-center gap-2 group">
+              <span>Explore Flavors</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+            <a href="#bundle-builder" class="px-8 py-4 rounded-xl bg-brand-teal hover:bg-brand-tealDark text-white font-bold text-center shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2">
+              <i data-lucide="box" class="w-4 h-4"></i>
+              <span>Build Custom Box (Save 15%)</span>
+            </a>
+          </div>
+
+          <!-- Live Tasting Profile Bar -->
+          <div class="pt-3 border-t border-stone-300/60 flex items-center gap-4 text-xs text-stone-600 font-semibold">
+            <span class="text-stone-900 font-bold flex items-center gap-1.5">
+              <i data-lucide="award" class="w-4 h-4 text-brand-amber"></i> Daily Batch Freshness:
+            </span>
+            <span>Batch #MA-108 Roasted 24 Hours Ago • Rating: <strong class="text-stone-900">4.9/5 (1,480+ Indian Foodies)</strong></span>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Flagship Pack Display (5 cols) -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-sm rounded-3xl p-6 bg-gradient-to-b from-white/95 to-amber-50/90 border border-amber-200/70 shadow-warm-lg">
+            
+            <!-- Floating Deal Badge -->
+            <div class="absolute -top-3 -right-3 bg-brand-spice text-white font-bold text-xs uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md transform rotate-2">
+              Bestseller
+            </div>
+
+            <!-- Stylized Bag Visual Representation -->
+            <div class="relative h-72 rounded-2xl bg-gradient-to-tr from-brand-espresso via-brand-tealDark to-brand-charcoal flex flex-col justify-between p-6 overflow-hidden text-white shadow-inner animate-float">
+              
+              <div class="absolute inset-0 opacity-15 bg-[radial-gradient(#FAF6ED_1px,transparent_1px)] [background-size:16px_16px]"></div>
+
+              <div class="relative z-10 flex justify-between items-start">
+                <div>
+                  <span class="text-[10px] uppercase font-extrabold tracking-widest text-emerald-300">MiliAnnam Artisanal</span>
+                  <h3 class="font-display text-2xl font-black tracking-tight leading-tight">ROASTED MULTIGRAIN</h3>
+                  <p class="text-xs text-amber-200/90 font-medium">Tangy Achari & Desi Rock Salt</p>
+                </div>
+                <div class="w-8 h-8 rounded-full border border-emerald-400/50 flex items-center justify-center bg-black/40">
+                  <span class="text-[9px] font-bold text-emerald-300">200g</span>
+                </div>
+              </div>
+
+              <!-- Center Graphic Millet Grain Illustration -->
+              <div class="relative z-10 my-auto text-center flex flex-col items-center justify-center">
+                <div class="w-20 h-20 rounded-full border-2 border-dashed border-emerald-400/40 flex items-center justify-center bg-emerald-500/10 mb-2">
+                  <i data-lucide="cookie" class="w-10 h-10 text-emerald-300"></i>
+                </div>
+                <span class="text-[11px] font-extrabold tracking-wider uppercase text-amber-100 bg-black/40 px-3 py-1 rounded-full border border-emerald-400/30">
+                  🔥 Super Crunch Formula
+                </span>
+              </div>
+
+              <div class="relative z-10 flex justify-between items-end border-t border-emerald-500/30 pt-3">
+                <div>
+                  <p class="text-[9px] uppercase tracking-wider text-stone-300">Net Weight</p>
+                  <p class="text-sm font-bold text-white">200 Grams</p>
+                </div>
+                <div class="text-right">
+                  <span class="text-[9px] text-stone-300 line-through">₹199</span>
+                  <p class="text-xl font-extrabold text-amber-300">₹149</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Interactive Flagship Pack Selector -->
+            <div class="mt-5 space-y-3">
+              <div class="flex items-center justify-between text-xs text-stone-600 font-semibold">
+                <span>Select Pack Configuration:</span>
+                <span class="text-brand-spice font-bold">Fast Dispatch</span>
+              </div>
+
+              <div class="grid grid-cols-3 gap-2">
+                <button onclick="selectHeroPack(this, 149, 'Single Pack (200g)', 'p1')" class="hero-pack-btn border-2 border-brand-teal bg-emerald-50/70 p-2 rounded-xl text-center transition-all">
+                  <span class="block text-xs font-bold text-stone-800">Single</span>
+                  <span class="text-[11px] text-stone-500">₹149</span>
+                </button>
+                <button onclick="selectHeroPack(this, 399, 'Trio Pack (3 x 200g)', 'p1-trio')" class="hero-pack-btn border border-stone-300 bg-white p-2 rounded-xl text-center hover:border-brand-teal transition-all">
+                  <span class="block text-xs font-bold text-stone-800">Trio (3x)</span>
+                  <span class="text-[11px] text-stone-500">₹399</span>
+                </button>
+                <button onclick="selectHeroPack(this, 749, 'Party Pack (6 x 200g)', 'p1-party')" class="hero-pack-btn border border-stone-300 bg-white p-2 rounded-xl text-center hover:border-brand-teal transition-all">
+                  <span class="block text-xs font-bold text-stone-800">Party (6x)</span>
+                  <span class="text-[11px] text-brand-spice font-bold">₹749</span>
+                </button>
+              </div>
+
+              <button 
+                id="heroAddBtn" 
+                onclick="addHeroPackToCart()" 
+                class="w-full py-3 px-4 rounded-xl bg-brand-spice hover:bg-orange-700 text-white font-bold text-sm shadow-md transition-all flex items-center justify-center gap-2 group"
+              >
+                <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+                <span id="heroAddText">Add 200g Pouch to Cart • ₹149</span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY MILIANNAM PILLARS ================= -->
+  <section id="why-section" class="py-12 bg-stone-100/80 border-y border-stone-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <h2 class="text-xs font-extrabold uppercase tracking-widest text-brand-teal">The MiliAnnam Standard</h2>
+        <p class="font-display text-2xl sm:text-3xl font-bold text-brand-charcoal mt-1">Why Conscious Snackers Choose Us</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        
+        <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm hover:shadow-md transition-all">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 text-brand-terracotta flex items-center justify-center mb-4">
+            <i data-lucide="drumstick" class="w-6 h-6 rotate-45"></i>
+          </div>
+          <h3 class="text-base font-bold text-stone-900 mb-1">Slow Roasting Tech</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Unlike industrial deep-frying that floods chips with burnt oils, our grain puffs are baked at controlled heat for maximum crunch without carcinogens.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm hover:shadow-md transition-all">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-brand-leaf flex items-center justify-center mb-4">
+            <i data-lucide="droplet-off" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-base font-bold text-stone-900 mb-1">Zero Palm Oil</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            We strictly reject cheap palm olein. We lightly mist our snacks with cold-pressed sun & mustard seed oils just enough for spices to stick.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm hover:shadow-md transition-all">
+          <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-spice flex items-center justify-center mb-4">
+            <i data-lucide="heart-pulse" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-base font-bold text-stone-900 mb-1">Ancient Millets (Shree Anna)</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Packed with Ragi, Bajra, and Jowar sourced directly from Indian farming cooperatives. Naturally gluten-friendly and rich in prebiotic dietary fiber.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm hover:shadow-md transition-all">
+          <div class="w-12 h-12 rounded-xl bg-teal-100 text-brand-teal flex items-center justify-center mb-4">
+            <i data-lucide="check-check" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-base font-bold text-stone-900 mb-1">Food Safety Verified</h3>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Manufactured in ISO 22000 & FSSAI certified hygienic facilities with 3-ply nitrogen-flushed metallic foil packaging for lasting freshness.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PRODUCT CATALOG ================= -->
+  <section id="catalog-section" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-wider text-brand-terracotta">Small-Batch Freshness</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-brand-charcoal mt-1">Our Snack Pantry</h2>
+        <p class="text-stone-600 text-sm mt-1">Each pack is freshly vacuum sealed with 6 months guaranteed shelf life.</p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-2">
+        <button onclick="filterCategory('all', this)" class="cat-pill active px-4 py-2 rounded-full text-xs font-bold transition-all bg-brand-charcoal text-white">All Snacks</button>
+        <button onclick="filterCategory('chips', this)" class="cat-pill px-4 py-2 rounded-full text-xs font-bold transition-all bg-white border border-stone-300 text-stone-700 hover:border-stone-500">Multigrain Chips</button>
+        <button onclick="filterCategory('puffs', this)" class="cat-pill px-4 py-2 rounded-full text-xs font-bold transition-all bg-white border border-stone-300 text-stone-700 hover:border-stone-500">Roasted Puffs</button>
+        <button onclick="filterCategory('crisps', this)" class="cat-pill px-4 py-2 rounded-full text-xs font-bold transition-all bg-white border border-stone-300 text-stone-700 hover:border-stone-500">Desi Masala</button>
+        <button onclick="filterCategory('bundles', this)" class="cat-pill px-4 py-2 rounded-full text-xs font-bold transition-all bg-white border border-stone-300 text-stone-700 hover:border-stone-500">Variety Bundles</button>
+      </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Injected via JavaScript dynamically -->
+    </div>
+  </section>
+
+  <!-- ================= BUILD YOUR CUSTOM SNACK BOX (BUNDLE BUILDER) ================= -->
+  <section id="bundle-builder" class="py-16 bg-gradient-to-b from-amber-50/70 via-orange-50/40 to-brand-cream border-y border-amber-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-brand-teal text-xs font-bold uppercase tracking-wider mb-2">
+          <i data-lucide="package-plus" class="w-3.5 h-3.5"></i> Custom Variety Curation
+        </div>
+        <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-brand-charcoal">Build Your Custom 4-Pack Snack Box</h2>
+        <p class="text-stone-600 text-sm mt-2">
+          Pick your 4 favorite flavors to complete your box. Instantly unlocks <strong>15% OFF + Free Express Shipping</strong> across India!
+        </p>
+
+        <!-- Progress Bar Indicator -->
+        <div class="mt-6 max-w-md mx-auto">
+          <div class="flex justify-between items-center text-xs font-bold text-stone-700 mb-1.5">
+            <span id="bundleProgressText">0 of 4 slots filled</span>
+            <span id="bundleDiscountTag" class="text-brand-spice">Select 4 to save 15%</span>
+          </div>
+          <div class="w-full bg-stone-200 h-3 rounded-full overflow-hidden p-0.5 border border-stone-300">
+            <div id="bundleProgressBar" class="bg-gradient-to-r from-brand-teal to-brand-leaf h-full rounded-full transition-all duration-300 w-0"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Visual Box Slots -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto mb-10">
+        
+        <!-- Slot 1 -->
+        <div id="slot-0" class="slot-box border-2 border-dashed border-amber-300 rounded-2xl p-4 bg-white/70 min-h-[140px] flex flex-col items-center justify-center text-center relative group">
+          <div class="w-10 h-10 rounded-full bg-amber-100 text-brand-terracotta flex items-center justify-center font-bold text-sm mb-2">1</div>
+          <span class="slot-text text-xs font-semibold text-stone-500">Empty Slot</span>
+        </div>
+
+        <!-- Slot 2 -->
+        <div id="slot-1" class="slot-box border-2 border-dashed border-amber-300 rounded-2xl p-4 bg-white/70 min-h-[140px] flex flex-col items-center justify-center text-center relative group">
+          <div class="w-10 h-10 rounded-full bg-amber-100 text-brand-terracotta flex items-center justify-center font-bold text-sm mb-2">2</div>
+          <span class="slot-text text-xs font-semibold text-stone-500">Empty Slot</span>
+        </div>
+
+        <!-- Slot 3 -->
+        <div id="slot-2" class="slot-box border-2 border-dashed border-amber-300 rounded-2xl p-4 bg-white/70 min-h-[140px] flex flex-col items-center justify-center text-center relative group">
+          <div class="w-10 h-10 rounded-full bg-amber-100 text-brand-terracotta flex items-center justify-center font-bold text-sm mb-2">3</div>
+          <span class="slot-text text-xs font-semibold text-stone-500">Empty Slot</span>
+        </div>
+
+        <!-- Slot 4 -->
+        <div id="slot-3" class="slot-box border-2 border-dashed border-amber-300 rounded-2xl p-4 bg-white/70 min-h-[140px] flex flex-col items-center justify-center text-center relative group">
+          <div class="w-10 h-10 rounded-full bg-amber-100 text-brand-terracotta flex items-center justify-center font-bold text-sm mb-2">4</div>
+          <span class="slot-text text-xs font-semibold text-stone-500">Empty Slot</span>
+        </div>
+
+      </div>
+
+      <!-- Flavor Pick List for the Box -->
+      <div class="max-w-4xl mx-auto">
+        <h3 class="text-sm font-bold uppercase tracking-wider text-stone-700 mb-4 text-center">Tap any flavor below to add into your box:</h3>
+        
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3" id="bundleOptionsGrid">
+          <!-- Populated by JS -->
+        </div>
+
+        <!-- Bundle Bottom CTA Bar -->
+        <div class="mt-8 bg-white p-5 rounded-2xl border border-amber-200/80 shadow-md flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-lg font-bold text-brand-charcoal">Custom Bundle Total:</span>
+              <span id="bundleOriginalPrice" class="text-stone-400 line-through text-sm">₹596</span>
+              <span id="bundleFinalPrice" class="text-2xl font-extrabold text-brand-spice">₹499</span>
+            </div>
+            <p class="text-xs text-emerald-700 font-semibold flex items-center gap-1">
+              <i data-lucide="check" class="w-3.5 h-3.5"></i> You save ₹97 + Free shipping qualified!
+            </p>
+          </div>
+
+          <button 
+            id="bundleSubmitBtn" 
+            onclick="addCustomBundleToCart()" 
+            disabled 
+            class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-stone-300 text-stone-500 font-bold text-sm transition-all flex items-center justify-center gap-2 cursor-not-allowed"
+          >
+            <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+            <span>Fill 4 Slots To Add Box</span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= NUTRITION & PURITY TRANSPARENCY SECTION ================= -->
+  <section id="quality-section" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-brand-charcoal text-white rounded-3xl p-8 sm:p-12 lg:p-16 relative overflow-hidden shadow-2xl">
+      <div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-brand-teal/20 blur-3xl"></div>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold uppercase tracking-wider">
+            <i data-lucide="microscope" class="w-3.5 h-3.5"></i> Zero Hidden Nasties
+          </div>
+          <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+            Read Our Label. <br class="hidden sm:inline"/>
+            No Chemicals. No Code-Names.
+          </h2>
+          <p class="text-stone-300 text-sm sm:text-base leading-relaxed">
+            Most commercial "diet snacks" replace palm oil with high-fructose corn syrups, maltodextrin, and synthetic emulsifiers (INS 551). MiliAnnam snacks are seasoned with whole kitchen spices: black pepper, cumin, dried mango powder (amchur), and pink Himalayan salt.
+          </p>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-2">
+            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+              <span class="text-2xl font-black text-amber-400 block font-display">65%</span>
+              <span class="text-xs text-stone-300 font-medium">Less fat than typical potato chips</span>
+            </div>
+            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+              <span class="text-2xl font-black text-amber-400 block font-display">0g</span>
+              <span class="text-xs text-stone-300 font-medium">Trans-fats & zero cholesterol</span>
+            </div>
+            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+              <span class="text-2xl font-black text-emerald-400 block font-display">100%</span>
+              <span class="text-xs text-stone-300 font-medium">Plant-based, 100% vegetarian</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Clean Label Comparison Table Card -->
+        <div class="lg:col-span-5 bg-white text-stone-900 rounded-2xl p-6 shadow-xl">
+          <h3 class="font-bold text-base text-stone-900 border-b border-stone-200 pb-3 flex items-center justify-between">
+            <span>The MiliAnnam Purity Test</span>
+            <span class="text-[11px] bg-emerald-100 text-brand-leaf font-bold px-2 py-0.5 rounded-full">Clean Label</span>
+          </h3>
+
+          <div class="divide-y divide-stone-100 text-xs">
+            <div class="py-2.5 flex justify-between items-center">
+              <span class="text-stone-600 font-medium">Cooking Style</span>
+              <span class="font-bold text-emerald-700">Air-Roasted (Zero Frying)</span>
+            </div>
+            <div class="py-2.5 flex justify-between items-center">
+              <span class="text-stone-600 font-medium">Oil Quality</span>
+              <span class="font-bold text-emerald-700">Cold-Pressed Mustard Mist</span>
+            </div>
+            <div class="py-2.5 flex justify-between items-center">
+              <span class="text-stone-600 font-medium">Grain Base</span>
+              <span class="font-bold text-emerald-700">Whole Ragi, Bajra & Chickpeas</span>
+            </div>
+            <div class="py-2.5 flex justify-between items-center">
+              <span class="text-stone-600 font-medium">Salt Used</span>
+              <span class="font-bold text-emerald-700">Pink Himalayan Rock Salt</span>
+            </div>
+            <div class="py-2.5 flex justify-between items-center">
+              <span class="text-stone-600 font-medium">Artificial Preservatives</span>
+              <span class="font-bold text-emerald-700">Strictly 0.0%</span>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-3 border-t border-stone-200 flex items-center justify-between text-[11px] text-stone-500">
+            <span>Govt. FSSAI Lic. #10824999000123</span>
+            <span class="flex items-center gap-1 font-semibold text-stone-700">
+              <i data-lucide="shield-alert" class="w-3.5 h-3.5 text-brand-spice"></i> Tamper-evident seal
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VERIFIED REVIEWS & SOCIAL PROOF ================= -->
+  <section id="reviews-section" class="py-16 bg-stone-100/60 border-t border-stone-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-teal">Crunch Stories</span>
+          <h2 class="font-display text-3xl font-extrabold text-brand-charcoal mt-1">Loved by 25,000+ Snack Enthusiasts</h2>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="flex text-amber-500">
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+          </div>
+          <span class="text-sm font-bold text-stone-800">4.9 / 5 Overall Rating</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm space-y-3">
+          <div class="flex items-center gap-1 text-amber-500">
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          </div>
+          <p class="text-stone-700 text-xs sm:text-sm italic leading-relaxed">
+            "Finally an Indian snack that doesn't leave your fingers dripping with grease! The Achari Tangy flavor actually tastes like homemade pickle spices, not synthetic seasoning powder."
+          </p>
+          <div class="pt-3 border-t border-stone-100 flex items-center justify-between">
+            <div>
+              <p class="text-xs font-bold text-stone-900">Dr. Sunita Raman</p>
+              <p class="text-[11px] text-stone-500">Bengaluru • Verified Buyer</p>
+            </div>
+            <span class="text-[10px] bg-emerald-50 text-brand-teal font-bold px-2 py-0.5 rounded">Ordered 6-Pack</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm space-y-3">
+          <div class="flex items-center gap-1 text-amber-500">
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          </div>
+          <p class="text-stone-700 text-xs sm:text-sm italic leading-relaxed">
+            "My 4 PM chai partner everyday at work. It keeps my cravings in check without the 300-calorie guilt of deep-fried chips. Ordered the custom bundle twice this month already."
+          </p>
+          <div class="pt-3 border-t border-stone-100 flex items-center justify-between">
+            <div>
+              <p class="text-xs font-bold text-stone-900">Aditya Verma</p>
+              <p class="text-[11px] text-stone-500">Gurugram • Verified Buyer</p>
+            </div>
+            <span class="text-[10px] bg-emerald-50 text-brand-teal font-bold px-2 py-0.5 rounded">Custom Box</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm space-y-3">
+          <div class="flex items-center gap-1 text-amber-500">
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          </div>
+          <p class="text-stone-700 text-xs sm:text-sm italic leading-relaxed">
+            "The crunch is unreal for a roasted product. Most diet chips feel cardboard-ish, but MiliAnnam nailed the crispy texture. The Himalayan Pink Salt is sublime."
+          </p>
+          <div class="pt-3 border-t border-stone-100 flex items-center justify-between">
+            <div>
+              <p class="text-xs font-bold text-stone-900">Pooja Deshmukh</p>
+              <p class="text-[11px] text-stone-500">Mumbai • Verified Buyer</p>
+            </div>
+            <span class="text-[10px] bg-emerald-50 text-brand-teal font-bold px-2 py-0.5 rounded">Multigrain Chips</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-brand-charcoal text-stone-300 pt-16 pb-12 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-stone-800">
+        
+        <!-- Brand Info -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 flex-shrink-0 flex items-center justify-center">
+              <svg viewBox="0 0 100 100" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 12 C50 12 65 30 65 42 C65 50.28 58.28 57 50 57 C41.72 57 35 50.28 35 42 C35 30 50 12 50 12 Z" fill="#20B2AA"/>
+                <path d="M50 24 C50 24 57 34 57 41 C57 44.87 53.87 48 50 48 C46.13 48 43 44.87 43 41 C43 34 50 24 50 24 Z" fill="#2B2118"/>
+                <path d="M50 59 C41 53 23 45 22 66 C22 81 44 82 50 59 Z" fill="#70A83B" stroke="#0B6B28" stroke-width="2.5"/>
+                <path d="M50 59 C59 53 77 45 78 66 C78 81 56 82 50 59 Z" fill="#70A83B" stroke="#0B6B28" stroke-width="2.5"/>
+              </svg>
+            </div>
+            <div>
+              <span class="text-2xl font-bold font-display text-white block">MiliAnnam</span>
+              <span class="text-[9px] font-bold uppercase tracking-[0.2em] text-emerald-400 block -mt-1">Healthy Snacking</span>
+            </div>
+          </div>
+          <p class="text-xs text-stone-400 leading-relaxed">
+            MiliAnnam is committed to reviving ancient Indian grains and superfoods into delicious, guilt-free daily crunch.
+          </p>
+          <div class="flex items-center gap-3 text-stone-400">
+            <a href="#" class="w-8 h-8 rounded-full bg-stone-800 flex items-center justify-center hover:bg-brand-teal hover:text-white transition-colors"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+            <a href="#" class="w-8 h-8 rounded-full bg-stone-800 flex items-center justify-center hover:bg-brand-teal hover:text-white transition-colors"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+            <a href="#" class="w-8 h-8 rounded-full bg-stone-800 flex items-center justify-center hover:bg-brand-teal hover:text-white transition-colors"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+
+        <!-- Shop Quick Links -->
+        <div>
+          <h4 class="text-white text-xs font-bold uppercase tracking-wider mb-4">Snack Catalog</h4>
+          <ul class="space-y-2.5 text-xs">
+            <li><a href="#catalog-section" class="hover:text-emerald-400 transition-colors">Roasted Multigrain Chips (200g)</a></li>
+            <li><a href="#catalog-section" class="hover:text-emerald-400 transition-colors">Diet Jowar & Bajra Crisps</a></li>
+            <li><a href="#catalog-section" class="hover:text-emerald-400 transition-colors">Tangy Achari Millet Pops</a></li>
+            <li><a href="#bundle-builder" class="hover:text-emerald-400 transition-colors">Build Custom 4-Pack (Save 15%)</a></li>
+            <li><a href="#catalog-section" class="hover:text-emerald-400 transition-colors">Party Variety Mega Box</a></li>
+          </ul>
+        </div>
+
+        <!-- Transparency & Trust -->
+        <div>
+          <h4 class="text-white text-xs font-bold uppercase tracking-wider mb-4">Purity & Assurance</h4>
+          <ul class="space-y-2.5 text-xs">
+            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> FSSAI Central License Verified</li>
+            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Non-GMO Farm Sourced</li>
+            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> 100% Recyclable Packaging</li>
+            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Direct Farmer Cooperative Trade</li>
+          </ul>
+        </div>
+
+        <!-- Help & Dispatch -->
+        <div>
+          <h4 class="text-white text-xs font-bold uppercase tracking-wider mb-4">Customer Care</h4>
+          <p class="text-xs text-stone-400 mb-2">Questions regarding orders or bulk gifting?</p>
+          <p class="text-xs font-bold text-white mb-1">Email: care@miliannam.in</p>
+          <p class="text-xs font-bold text-white mb-3">WhatsApp: +91 98765 43210</p>
+          <span class="inline-block text-[11px] bg-stone-800 text-stone-300 px-3 py-1.5 rounded-lg border border-stone-700">
+            🚚 Orders dispatched within 24h
+          </span>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
+        <p>© 2026 MiliAnnam Healthy Snacking Pvt. Ltd. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="#" class="hover:underline">Privacy Policy</a>
+          <a href="#" class="hover:underline">Terms of Service</a>
+          <a href="#" class="hover:underline">Shipping & Returns</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= SLIDE-OVER CART DRAWER ================= -->
+  <div id="cartDrawerBackdrop" onclick="toggleCartDrawer(false)" class="fixed inset-0 z-50 drawer-backdrop opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+  <div id="cartDrawer" class="fixed top-0 right-0 h-full w-full sm:w-[420px] bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col justify-between">
+    
+    <div class="p-5 border-b border-stone-200 flex items-center justify-between bg-brand-cream">
+      <div class="flex items-center gap-2">
+        <i data-lucide="shopping-bag" class="w-5 h-5 text-brand-spice"></i>
+        <h3 class="font-display font-bold text-lg text-brand-charcoal">Your Snack Bag</h3>
+        <span id="drawerCountTag" class="text-xs font-bold bg-amber-200 text-stone-800 px-2 py-0.5 rounded-full">0</span>
+      </div>
+      <button onclick="toggleCartDrawer(false)" class="p-1 rounded-full hover:bg-stone-200 text-stone-600 transition-colors">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+    <!-- Free Delivery Progress Tracker -->
+    <div class="bg-amber-50 px-5 py-3 border-b border-amber-200/60">
+      <div class="flex justify-between items-center text-xs font-bold text-stone-700 mb-1">
+        <span id="shippingTrackerMsg">Add ₹499 more for FREE Delivery!</span>
+        <span id="shippingPercent">0%</span>
+      </div>
+      <div class="w-full bg-stone-200 h-2 rounded-full overflow-hidden">
+        <div id="shippingBar" class="bg-brand-leaf h-full rounded-full transition-all duration-300 w-0"></div>
+      </div>
+    </div>
+
+    <!-- Cart Items Scrollable List -->
+    <div id="cartItemsContainer" class="p-5 overflow-y-auto flex-1 space-y-4">
+      <!-- Dynamically populated via JS -->
+    </div>
+
+    <!-- Drawer Footer & Checkout Action -->
+    <div class="p-5 border-t border-stone-200 bg-brand-cream/80 space-y-3">
+      
+      <!-- Coupon Code Input -->
+      <div class="flex gap-2">
+        <input 
+          type="text" 
+          id="couponInput" 
+          placeholder="Enter coupon (e.g. CRUNCH10)" 
+          class="flex-1 px-3 py-2 text-xs rounded-xl border border-stone-300 uppercase font-semibold focus:outline-none focus:ring-1 focus:ring-brand-teal"
+        />
+        <button 
+          onclick="applyCoupon()" 
+          class="px-4 py-2 bg-brand-charcoal hover:bg-stone-800 text-white text-xs font-bold rounded-xl transition-all"
+        >
+          Apply
+        </button>
+      </div>
+
+      <!-- Price Breakdown -->
+      <div class="space-y-1.5 text-xs text-stone-600 pt-2 border-t border-stone-200/80">
+        <div class="flex justify-between">
+          <span>Subtotal</span>
+          <span id="cartSubtotal" class="font-bold text-stone-900">₹0</span>
+        </div>
+        <div id="discountRow" class="hidden flex justify-between text-emerald-700 font-semibold">
+          <span id="discountTitle">Discount (10%)</span>
+          <span id="cartDiscount">-₹0</span>
+        </div>
+        <div class="flex justify-between">
+          <span>Estimated Delivery</span>
+          <span id="cartShippingFee" class="font-bold text-stone-900">₹60</span>
+        </div>
+        <div class="flex justify-between text-base font-extrabold text-brand-charcoal pt-2 border-t border-stone-300">
+          <span>Total Amount</span>
+          <span id="cartTotal">₹0</span>
+        </div>
+      </div>
+
+      <!-- Checkout Trigger Button -->
+      <button 
+        id="openCheckoutBtn" 
+        onclick="openCheckoutModal()" 
+        disabled
+        class="w-full py-3.5 rounded-xl bg-brand-spice hover:bg-orange-700 text-white font-bold text-sm shadow-md transition-all flex items-center justify-center gap-2 disabled:bg-stone-300 disabled:cursor-not-allowed"
+      >
+        <span>Proceed to Secure Checkout</span>
+        <i data-lucide="lock" class="w-4 h-4"></i>
+      </button>
+
+      <p class="text-[10px] text-center text-stone-500 flex items-center justify-center gap-1">
+        <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-600"></i> 256-bit SSL Encrypted • 100% Guaranteed Freshness
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- ================= PRODUCT QUICK VIEW MODAL ================= -->
+  <div id="quickViewModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 drawer-backdrop">
+    <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl relative border border-stone-200">
+      
+      <button onclick="closeQuickView()" class="absolute top-5 right-5 p-1.5 rounded-full hover:bg-stone-100 text-stone-600 transition-colors">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+        <div class="rounded-2xl p-6 bg-gradient-to-tr from-brand-charcoal to-brand-tealDark text-white flex flex-col justify-between min-h-[260px]">
+          <div>
+            <span id="modalBadge" class="text-[10px] uppercase font-bold text-amber-300 tracking-wider">MiliAnnam Quality</span>
+            <h3 id="modalTitle" class="font-display text-2xl font-bold mt-1">Product Title</h3>
+            <p id="modalFlavor" class="text-xs text-emerald-200 mt-0.5">Flavor notes</p>
+          </div>
+          <div class="my-auto text-center py-4">
+            <i data-lucide="cookie" class="w-16 h-16 text-amber-300 mx-auto"></i>
+          </div>
+          <div class="flex justify-between items-end border-t border-white/20 pt-3 text-xs">
+            <span id="modalWeight">Net Wt: 200g</span>
+            <span id="modalPrice" class="text-xl font-black text-amber-300">₹149</span>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <div>
+            <h4 class="text-xs font-bold uppercase tracking-wider text-brand-teal">Clean Nutrition Facts (Per 100g)</h4>
+            <div class="grid grid-cols-2 gap-2 mt-2 text-xs">
+              <div class="p-2 rounded-lg bg-stone-100"><span class="text-stone-500 block">Energy:</span> <strong id="modalEnergy" class="text-stone-900">380 kcal</strong></div>
+              <div class="p-2 rounded-lg bg-stone-100"><span class="text-stone-500 block">Protein:</span> <strong id="modalProtein" class="text-emerald-700">8.6 g</strong></div>
+              <div class="p-2 rounded-lg bg-stone-100"><span class="text-stone-500 block">Total Fat:</span> <strong id="modalFat" class="text-stone-900">7.2 g (Roasted)</strong></div>
+              <div class="p-2 rounded-lg bg-stone-100"><span class="text-stone-500 block">Dietary Fiber:</span> <strong id="modalFiber" class="text-stone-900">9.1 g</strong></div>
+            </div>
+          </div>
+
+          <div>
+            <h5 class="text-xs font-bold text-stone-800">Key Wholesome Ingredients:</h5>
+            <p id="modalIngredients" class="text-xs text-stone-600 mt-1 leading-relaxed">
+              Finger Millet (Ragi), Pearl Millet (Bajra), Sorghum (Jowar), Cold-Pressed Mustard Oil (spray mist), Pink Himalayan Rock Salt, Dry Mango Powder, Cumin, Fenugreek.
+            </p>
+          </div>
+
+          <div class="text-[11px] text-stone-500 space-y-1 border-t border-stone-200 pt-3">
+            <p><strong>Shelf Life:</strong> 6 Months from packaging date.</p>
+            <p><strong>Storage:</strong> Store in a cool, airtight container after opening.</p>
+          </div>
+
+          <button 
+            id="modalAddBtn" 
+            onclick="addModalProductToCart()" 
+            class="w-full py-3 bg-brand-spice hover:bg-orange-700 text-white font-bold text-xs uppercase tracking-wider rounded-xl transition-all shadow-md flex items-center justify-center gap-2"
+          >
+            <i data-lucide="shopping-bag" class="w-4 h-4"></i> Add To Bag Now
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= CHECKOUT MODAL ================= -->
+  <div id="checkoutModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 drawer-backdrop">
+    <div class="bg-white rounded-3xl max-w-xl w-full max-h-[92vh] overflow-y-auto p-6 sm:p-8 shadow-2xl relative border border-stone-200">
+      
+      <button onclick="closeCheckoutModal()" class="absolute top-5 right-5 p-1.5 rounded-full hover:bg-stone-100 text-stone-600 transition-colors">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div id="checkoutStep1">
+        <div class="mb-6">
+          <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-brand-teal">
+            <i data-lucide="shield-check" class="w-4 h-4"></i> Verified Secure Checkout
+          </div>
+          <h3 class="font-display text-2xl font-extrabold text-stone-900 mt-1">Delivery Address</h3>
+          <p class="text-xs text-stone-500">Fast delivery across all Indian pin codes.</p>
+        </div>
+
+        <form onsubmit="handleOrderSubmission(event)" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1">Full Name *</label>
+              <input type="text" required placeholder="e.g. Ramesh Kumar" class="w-full p-2.5 text-xs rounded-xl border border-stone-300 focus:ring-2 focus:ring-brand-teal focus:outline-none" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1">Mobile Number (For Tracking) *</label>
+              <input type="tel" required placeholder="e.g. 9876543210" class="w-full p-2.5 text-xs rounded-xl border border-stone-300 focus:ring-2 focus:ring-brand-teal focus:outline-none" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-stone-700 mb-1">Complete Street Address *</label>
+            <input type="text" required placeholder="Flat/House No, Building, Landmark, Street" class="w-full p-2.5 text-xs rounded-xl border border-stone-300 focus:ring-2 focus:ring-brand-teal focus:outline-none" />
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1">Pin Code *</label>
+              <input type="text" required placeholder="e.g. 560001" class="w-full p-2.5 text-xs rounded-xl border border-stone-300 focus:ring-2 focus:ring-brand-teal focus:outline-none" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1">City *</label>
+              <input type="text" required placeholder="e.g. Bengaluru" class="w-full p-2.5 text-xs rounded-xl border border-stone-300 focus:ring-2 focus:ring-brand-teal focus:outline-none" />
+            </div>
+            <div class="col-span-2 sm:col-span-1">
+              <label class="block text-xs font-bold text-stone-700 mb-1">State *</label>
+              <input type="text" required placeholder="e.g. Karnataka" class="w-full p-2.5 text-xs rounded-xl border border-stone-300 focus:ring-2 focus:ring-brand-teal focus:outline-none" />
+            </div>
+          </div>
+
+          <div class="pt-3 border-t border-stone-200">
+            <label class="block text-xs font-bold text-stone-800 mb-2">Select Payment Method</label>
+            <div class="grid grid-cols-3 gap-2 text-xs">
+              <label class="flex flex-col items-center p-3 border-2 border-brand-teal rounded-xl bg-teal-50/50 cursor-pointer text-center">
+                <input type="radio" name="payment" value="upi" checked class="hidden" />
+                <i data-lucide="qr-code" class="w-5 h-5 text-brand-teal mb-1"></i>
+                <span class="font-bold text-stone-900">UPI / GPay</span>
+                <span class="text-[10px] text-brand-teal font-bold">Instant</span>
+              </label>
+
+              <label class="flex flex-col items-center p-3 border border-stone-300 rounded-xl bg-white cursor-pointer text-center hover:border-stone-400">
+                <input type="radio" name="payment" value="card" class="hidden" />
+                <i data-lucide="credit-card" class="w-5 h-5 text-stone-700 mb-1"></i>
+                <span class="font-bold text-stone-900">Debit / Card</span>
+                <span class="text-[10px] text-stone-500">All banks</span>
+              </label>
+
+              <label class="flex flex-col items-center p-3 border border-stone-300 rounded-xl bg-white cursor-pointer text-center hover:border-stone-400">
+                <input type="radio" name="payment" value="cod" class="hidden" />
+                <i data-lucide="banknote" class="w-5 h-5 text-stone-700 mb-1"></i>
+                <span class="font-bold text-stone-900">Pay On Delivery</span>
+                <span class="text-[10px] text-stone-500">Cash / UPI</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="bg-stone-50 p-3.5 rounded-xl border border-stone-200 flex justify-between items-center text-xs">
+            <div>
+              <span class="text-stone-500 block">Total Payable Now:</span>
+              <strong id="checkoutTotalDisplay" class="text-base text-brand-charcoal font-black">₹0</strong>
+            </div>
+            <span class="text-[11px] text-emerald-700 font-bold bg-emerald-50 px-2 py-1 rounded">
+              ✔ 100% Secure Payment Guarantee
+            </span>
+          </div>
+
+          <button 
+            type="submit" 
+            class="w-full py-3.5 rounded-xl bg-brand-spice hover:bg-orange-700 text-white font-bold text-sm shadow-lg transition-all flex items-center justify-center gap-2"
+          >
+            <span>Place Order & Pay</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </form>
+      </div>
+
+      <div id="checkoutSuccess" class="hidden text-center py-6 space-y-4">
+        <div class="w-16 h-16 rounded-full bg-emerald-100 text-brand-teal flex items-center justify-center mx-auto shadow-inner">
+          <i data-lucide="check-circle-2" class="w-10 h-10"></i>
+        </div>
+
+        <h3 class="font-display text-2xl font-extrabold text-stone-900">Order Placed Successfully!</h3>
+        <p class="text-xs text-stone-600 max-w-sm mx-auto">
+          Thank you for choosing wholesome snacking with <strong>MiliAnnam</strong>. We've sent an SMS confirmation & tracking details to your mobile.
+        </p>
+
+        <div class="bg-stone-50 p-4 rounded-2xl border border-stone-200 max-w-xs mx-auto text-left text-xs space-y-1.5">
+          <div class="flex justify-between">
+            <span class="text-stone-500">Order ID:</span>
+            <strong id="confirmedOrderId" class="text-stone-900">#MA-82910</strong>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-stone-500">Estimated Dispatch:</span>
+            <strong class="text-brand-teal">Tomorrow morning</strong>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-stone-500">Amount Paid:</span>
+            <strong id="confirmedAmount" class="text-stone-900 font-bold">₹0</strong>
+          </div>
+        </div>
+
+        <div class="pt-4">
+          <button onclick="resetAndContinueShopping()" class="px-8 py-3 rounded-xl bg-brand-charcoal text-white font-bold text-xs uppercase tracking-wider hover:bg-black transition-all">
+            Continue Snacking
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= TOAST NOTIFICATION ================= -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none bg-stone-900 text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 border border-stone-700">
+    <div id="toastIcon" class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
+      <i data-lucide="check" class="w-4 h-4"></i>
+    </div>
+    <div>
+      <h4 id="toastTitle" class="text-xs font-bold text-white">Item Added to Bag</h4>
+      <p id="toastMessage" class="text-[11px] text-stone-400">Your crunch journey just got better!</p>
+    </div>
+  </div>
+
+  <!-- ================= JAVASCRIPT APPLICATION LOGIC ================= -->
+  <script>
+    const snackProducts = [
+      {
+        id: 'ma-01',
+        title: 'Roasted Multigrain Chips',
+        category: 'chips',
+        netWeight: '200g',
+        flavorNote: 'Tangy Achari & Himalayan Rock Salt',
+        rating: 4.9,
+        reviewsCount: 420,
+        badge: 'Bestseller',
+        priceSingle: 149,
+        priceTrio: 399,
+        priceParty: 749,
+        nutrition: {
+          energy: '385 kcal',
+          protein: '8.4 g',
+          fat: '7.1 g',
+          fiber: '9.3 g'
+        },
+        ingredients: 'Sprouted Ragi, Pearl Millet (Bajra), Sorghum (Jowar), Cold-Pressed Mustard Mist, Himalayan Pink Salt, Dry Mango Powder, Fresh Spices.',
+        gradient: 'from-amber-950 to-stone-900'
+      },
+      {
+        id: 'ma-02',
+        title: 'Diet Jowar Roasted Puffs',
+        category: 'puffs',
+        netWeight: '150g',
+        flavorNote: 'Khatta Meetha Masala & Curry Leaves',
+        rating: 4.8,
+        reviewsCount: 310,
+        badge: 'Zero Oil Spray',
+        priceSingle: 129,
+        priceTrio: 349,
+        priceParty: 649,
+        nutrition: {
+          energy: '350 kcal',
+          protein: '9.2 g',
+          fat: '5.4 g',
+          fiber: '11.0 g'
+        },
+        ingredients: 'Whole Grain Sorghum (Jowar), Sun-Dried Curry Leaf Dust, Asafoetida (Hing), Rock Salt, Raw Cane Jaggery Hint.',
+        gradient: 'from-stone-900 to-teal-950'
+      },
+      {
+        id: 'ma-03',
+        title: 'Spiced Bajra & Chickpea Crisps',
+        category: 'crisps',
+        netWeight: '200g',
+        flavorNote: 'Smoked Paprika & Desi Black Pepper',
+        rating: 4.9,
+        reviewsCount: 280,
+        badge: 'High Protein',
+        priceSingle: 159,
+        priceTrio: 429,
+        priceParty: 799,
+        nutrition: {
+          energy: '392 kcal',
+          protein: '11.4 g',
+          fat: '6.8 g',
+          fiber: '8.7 g'
+        },
+        ingredients: 'Black Gram Flour, Pearl Millet, Organic Bengal Gram, Black Pepper, Coriander Seed Extract, Cold-Pressed Sunflower Oil Mist.',
+        gradient: 'from-teal-950 to-stone-900'
+      },
+      {
+        id: 'ma-04',
+        title: 'Millet Magic Party Assortment',
+        category: 'bundles',
+        netWeight: '800g (4x200g)',
+        flavorNote: '4 Signature Flavors In One Box',
+        rating: 5.0,
+        reviewsCount: 540,
+        badge: 'Save 20%',
+        priceSingle: 549,
+        priceTrio: 1049,
+        priceParty: 1999,
+        nutrition: {
+          energy: '375 kcal',
+          protein: '9.8 g',
+          fat: '6.5 g',
+          fiber: '9.8 g'
+        },
+        ingredients: 'Combination of Ragi Chips, Jowar Puffs, Spiced Bajra Crisps, and Masala Makhana.',
+        gradient: 'from-orange-950 to-stone-900'
+      },
+      {
+        id: 'ma-05',
+        title: 'Ragi & Flaxseed Crispies',
+        category: 'chips',
+        netWeight: '180g',
+        flavorNote: 'Roasted Cumin & Sea Salt',
+        rating: 4.7,
+        reviewsCount: 195,
+        badge: 'Omega-3 Rich',
+        priceSingle: 139,
+        priceTrio: 379,
+        priceParty: 699,
+        nutrition: {
+          energy: '370 kcal',
+          protein: '7.8 g',
+          fat: '8.0 g',
+          fiber: '10.2 g'
+        },
+        ingredients: 'Whole Ragi Flour, Roasted Golden Flaxseeds, Cold-Pressed Sesame Mist, Rock Salt, Roasted Jeera Powder.',
+        gradient: 'from-stone-900 to-amber-900'
+      },
+      {
+        id: 'ma-06',
+        title: 'Desi Masala Foxnut (Makhana)',
+        category: 'crisps',
+        netWeight: '120g',
+        flavorNote: 'Pudina Mint & Chaat Spices',
+        rating: 4.9,
+        reviewsCount: 380,
+        badge: 'Superfood',
+        priceSingle: 169,
+        priceTrio: 449,
+        priceParty: 849,
+        nutrition: {
+          energy: '340 kcal',
+          protein: '9.6 g',
+          fat: '4.2 g',
+          fiber: '7.5 g'
+        },
+        ingredients: 'Gorgon Nut (Makhana), Mint Leaf Dust, Pomegranate Seed Powder (Anardana), Black Salt, Turmeric.',
+        gradient: 'from-teal-950 to-stone-800'
+      },
+      {
+        id: 'ma-07',
+        title: 'Crispy Moong & Quinoa Crackers',
+        category: 'puffs',
+        netWeight: '190g',
+        flavorNote: 'Garlic Herb & Red Chilli Flakes',
+        rating: 4.8,
+        reviewsCount: 215,
+        badge: 'Light & Crisp',
+        priceSingle: 149,
+        priceTrio: 399,
+        priceParty: 749,
+        nutrition: {
+          energy: '365 kcal',
+          protein: '10.5 g',
+          fat: '5.9 g',
+          fiber: '8.0 g'
+        },
+        ingredients: 'Yellow Moong Dal, White Quinoa, Dehydrated Garlic, Kashmiri Chilli, Cold-Pressed Mustard Mist.',
+        gradient: 'from-stone-900 to-stone-800'
+      },
+      {
+        id: 'ma-08',
+        title: 'All-Star Crunch Variety Box',
+        category: 'bundles',
+        netWeight: '1200g (6x200g)',
+        flavorNote: 'The Ultimate Snacking Feast',
+        rating: 5.0,
+        reviewsCount: 680,
+        badge: 'Best Value',
+        priceSingle: 799,
+        priceTrio: 1499,
+        priceParty: 2899,
+        nutrition: {
+          energy: '372 kcal',
+          protein: '9.5 g',
+          fat: '6.4 g',
+          fiber: '9.2 g'
+        },
+        ingredients: '6 Full-sized individual pouches of all MiliAnnam flagship flavors in an artisan gift box.',
+        gradient: 'from-stone-950 to-teal-950'
+      }
+    ];
+
+    let cart = [];
+    let appliedCoupon = null;
+    let selectedHeroItem = {
+      price: 149,
+      label: 'Single Pack (200g)',
+      id: 'ma-01'
+    };
+    let bundleSlots = [null, null, null, null];
+    let activeQuickViewProduct = null;
+
+    window.addEventListener('DOMContentLoaded', () => {
+      renderProducts(snackProducts);
+      renderBundleOptions();
+      lucide.createIcons();
+    });
+
+    function renderProducts(items) {
+      const grid = document.getElementById('productGrid');
+      grid.innerHTML = '';
+
+      if (items.length === 0) {
+        grid.innerHTML = `
+          <div class="col-span-full py-12 text-center text-stone-500">
+            <i data-lucide="cookie" class="w-12 h-12 mx-auto mb-2 text-stone-300"></i>
+            <p class="font-bold">No crunch matches your search query.</p>
+            <p class="text-xs">Try searching for 'roasted', 'ragi', or 'masala'.</p>
+          </div>
+        `;
+        lucide.createIcons();
+        return;
+      }
+
+      items.forEach(prod => {
+        const card = document.createElement('div');
+        card.className = "bg-white rounded-2xl border border-stone-200/90 overflow-hidden shadow-sm hover:shadow-warm transition-all duration-300 flex flex-col justify-between group";
+        card.innerHTML = `
+          <div>
+            <div class="relative h-44 bg-gradient-to-tr ${prod.gradient} p-4 flex flex-col justify-between text-white overflow-hidden">
+              <div class="flex justify-between items-start">
+                <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-amber-200">
+                  ${prod.badge}
+                </span>
+                <span class="text-[11px] font-bold bg-black/40 px-2 py-0.5 rounded-md text-stone-300">
+                  ${prod.netWeight}
+                </span>
+              </div>
+              
+              <div class="text-center my-auto">
+                <i data-lucide="cookie" class="w-12 h-12 text-amber-300 mx-auto group-hover:scale-110 transition-transform duration-300"></i>
+              </div>
+
+              <div class="flex items-center justify-between text-xs text-amber-100/90 font-medium border-t border-white/10 pt-2">
+                <span class="truncate max-w-[170px]">${prod.flavorNote}</span>
+                <span class="flex items-center gap-1 font-bold text-amber-300">
+                  <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i> ${prod.rating}
+                </span>
+              </div>
+            </div>
+
+            <div class="p-4 space-y-3">
+              <div>
+                <h3 class="font-display font-bold text-base text-stone-900 group-hover:text-brand-spice transition-colors leading-snug">
+                  ${prod.title}
+                </h3>
+                <p class="text-xs text-stone-500 mt-0.5">Roasted multigrain crisps • Small batch</p>
+              </div>
+
+              <div class="space-y-1">
+                <label class="text-[11px] font-bold text-stone-500">Pack Size:</label>
+                <select id="select-pack-${prod.id}" onchange="updateCardPrice('${prod.id}')" class="w-full text-xs font-semibold p-2 rounded-lg bg-stone-100 border border-stone-300 focus:outline-none focus:ring-1 focus:ring-brand-teal">
+                  <option value="${prod.priceSingle}" data-name="Single (${prod.netWeight})">Single (${prod.netWeight}) - ₹${prod.priceSingle}</option>
+                  <option value="${prod.priceTrio}" data-name="Trio Pack (3x)">Trio Pack (3x) - ₹${prod.priceTrio}</option>
+                  <option value="${prod.priceParty}" data-name="Party Pack (6x)">Party Pack (6x) - ₹${prod.priceParty} (Best Saver)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4 pt-0 space-y-2.5">
+            <div class="flex items-baseline justify-between">
+              <div>
+                <span class="text-[10px] text-stone-400 uppercase font-semibold">Price</span>
+                <p id="price-val-${prod.id}" class="text-xl font-extrabold text-brand-charcoal">₹${prod.priceSingle}</p>
+              </div>
+              <button onclick="openQuickView('${prod.id}')" class="text-xs font-bold text-brand-teal hover:underline flex items-center gap-0.5">
+                <i data-lucide="info" class="w-3.5 h-3.5"></i> Nutrition
+              </button>
+            </div>
+
+            <button 
+              onclick="addToCartFromCard('${prod.id}')" 
+              class="w-full py-2.5 px-4 rounded-xl bg-brand-charcoal hover:bg-stone-800 text-white font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 group-hover:bg-brand-spice"
+            >
+              <i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i> Add to Bag
+            </button>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      lucide.createIcons();
+    }
+
+    function updateCardPrice(prodId) {
+      const select = document.getElementById(`select-pack-${prodId}`);
+      const priceText = document.getElementById(`price-val-${prodId}`);
+      priceText.innerText = `₹${select.value}`;
+    }
+
+    function filterCategory(category, buttonEl) {
+      document.querySelectorAll('.cat-pill').forEach(btn => {
+        btn.classList.remove('bg-brand-charcoal', 'text-white', 'active');
+        btn.classList.add('bg-white', 'text-stone-700', 'border', 'border-stone-300');
+      });
+      buttonEl.classList.remove('bg-white', 'text-stone-700', 'border', 'border-stone-300');
+      buttonEl.classList.add('bg-brand-charcoal', 'text-white', 'active');
+
+      if (category === 'all') {
+        renderProducts(snackProducts);
+      } else {
+        const filtered = snackProducts.filter(p => p.category === category);
+        renderProducts(filtered);
+      }
+    }
+
+    function handleSearch(query) {
+      const q = query.trim().toLowerCase();
+      const filtered = snackProducts.filter(p => 
+        p.title.toLowerCase().includes(q) || 
+        p.flavorNote.toLowerCase().includes(q) || 
+        p.ingredients.toLowerCase().includes(q)
+      );
+      renderProducts(filtered);
+    }
+
+    function selectHeroPack(btn, price, label, code) {
+      document.querySelectorAll('.hero-pack-btn').forEach(b => {
+        b.classList.remove('border-2', 'border-brand-teal', 'bg-emerald-50/70');
+        b.classList.add('border', 'border-stone-300', 'bg-white');
+      });
+      btn.classList.remove('border', 'border-stone-300', 'bg-white');
+      btn.classList.add('border-2', 'border-brand-teal', 'bg-emerald-50/70');
+
+      selectedHeroItem = {
+        price: price,
+        label: label,
+        id: 'ma-01'
+      };
+
+      document.getElementById('heroAddText').innerText = `Add ${label} to Cart • ₹${price}`;
+    }
+
+    function addHeroPackToCart() {
+      const flagship = snackProducts[0];
+      addItemToCart({
+        id: `${flagship.id}-${selectedHeroItem.label}`,
+        name: `${flagship.title} - ${selectedHeroItem.label}`,
+        price: selectedHeroItem.price,
+        weight: '200g Roasted Multi',
+        quantity: 1
+      });
+      showToast(`${selectedHeroItem.label} Added!`, "Crispy goodness added to your cart.");
+      toggleCartDrawer(true);
+    }
+
+    function addToCartFromCard(prodId) {
+      const prod = snackProducts.find(p => p.id === prodId);
+      const select = document.getElementById(`select-pack-${prodId}`);
+      const price = parseInt(select.value);
+      const selectedOption = select.options[select.selectedIndex];
+      const packName = selectedOption.getAttribute('data-name');
+
+      addItemToCart({
+        id: `${prod.id}-${packName}`,
+        name: `${prod.title} (${packName})`,
+        price: price,
+        weight: prod.netWeight,
+        quantity: 1
+      });
+
+      showToast(`Added to Bag`, `${prod.title} (${packName})`);
+    }
+
+    function renderBundleOptions() {
+      const container = document.getElementById('bundleOptionsGrid');
+      container.innerHTML = '';
+
+      snackProducts.slice(0, 8).forEach(item => {
+        const btn = document.createElement('button');
+        btn.onclick = () => addFlavorToBundle(item.title);
+        btn.className = "p-3 rounded-xl bg-white border border-stone-200 text-left hover:border-brand-teal hover:bg-emerald-50 transition-all flex flex-col justify-between shadow-sm group";
+        btn.innerHTML = `
+          <div class="flex items-center justify-between w-full mb-1">
+            <span class="text-[10px] uppercase font-bold text-brand-teal">${item.category}</span>
+            <i data-lucide="plus-circle" class="w-4 h-4 text-stone-400 group-hover:text-brand-teal"></i>
+          </div>
+          <span class="text-xs font-bold text-stone-900 leading-snug">${item.title}</span>
+          <span class="text-[10px] text-stone-500 mt-1">${item.netWeight}</span>
+        `;
+        container.appendChild(btn);
+      });
+    }
+
+    function addFlavorToBundle(flavorTitle) {
+      const emptyIndex = bundleSlots.findIndex(slot => slot === null);
+      if (emptyIndex === -1) {
+        showToast("Box is Full!", "You already picked 4 snacks. Remove one slot to replace.");
+        return;
+      }
+
+      bundleSlots[emptyIndex] = flavorTitle;
+      updateBundleUI();
+    }
+
+    function removeFlavorFromBundle(index) {
+      bundleSlots[index] = null;
+      updateBundleUI();
+    }
+
+    function updateBundleUI() {
+      const filledCount = bundleSlots.filter(s => s !== null).length;
+      
+      bundleSlots.forEach((flavor, idx) => {
+        const slotEl = document.getElementById(`slot-${idx}`);
+        if (flavor) {
+          slotEl.className = "slot-box border-2 border-brand-teal rounded-2xl p-4 bg-teal-50 min-h-[140px] flex flex-col items-center justify-center text-center relative group shadow-sm";
+          slotEl.innerHTML = `
+            <button onclick="removeFlavorFromBundle(${idx})" class="absolute top-2 right-2 p-1 bg-white rounded-full text-stone-400 hover:text-red-500 shadow-sm">
+              <i data-lucide="x" class="w-3.5 h-3.5"></i>
+            </button>
+            <div class="w-7 h-7 rounded-full bg-emerald-200 text-brand-teal flex items-center justify-center font-bold text-xs mb-1">
+              ✓
+            </div>
+            <span class="text-xs font-bold text-stone-800 line-clamp-2 px-1">${flavor}</span>
+            <span class="text-[10px] text-brand-teal font-semibold mt-1">Slot ${idx + 1} Ready</span>
+          `;
+        } else {
+          slotEl.className = "slot-box border-2 border-dashed border-amber-300 rounded-2xl p-4 bg-white/70 min-h-[140px] flex flex-col items-center justify-center text-center relative group";
+          slotEl.innerHTML = `
+            <div class="w-10 h-10 rounded-full bg-amber-100 text-brand-terracotta flex items-center justify-center font-bold text-sm mb-2">${idx + 1}</div>
+            <span class="slot-text text-xs font-semibold text-stone-500">Tap Any Flavor</span>
+          `;
+        }
+      });
+
+      const progressPercent = (filledCount / 4) * 100;
+      document.getElementById('bundleProgressBar').style.width = `${progressPercent}%`;
+      document.getElementById('bundleProgressText').innerText = `${filledCount} of 4 slots filled`;
+
+      const submitBtn = document.getElementById('bundleSubmitBtn');
+      if (filledCount === 4) {
+        document.getElementById('bundleDiscountTag').innerText = "15% OFF Unlocked!";
+        document.getElementById('bundleDiscountTag').className = "text-emerald-700 font-bold";
+        submitBtn.disabled = false;
+        submitBtn.className = "w-full sm:w-auto px-8 py-3.5 rounded-xl bg-brand-spice hover:bg-orange-700 text-white font-bold text-sm shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer";
+        submitBtn.innerHTML = `<i data-lucide="shopping-bag" class="w-4 h-4"></i> Add 4-Pack Box to Bag (₹499)`;
+      } else {
+        document.getElementById('bundleDiscountTag').innerText = "Select 4 to save 15%";
+        document.getElementById('bundleDiscountTag').className = "text-brand-spice font-bold";
+        submitBtn.disabled = true;
+        submitBtn.className = "w-full sm:w-auto px-8 py-3.5 rounded-xl bg-stone-300 text-stone-500 font-bold text-sm transition-all flex items-center justify-center gap-2 cursor-not-allowed";
+        submitBtn.innerHTML = `<i data-lucide="shopping-bag" class="w-4 h-4"></i> Fill ${4 - filledCount} More to Add Box`;
+      }
+
+      lucide.createIcons();
+    }
+
+    function addCustomBundleToCart() {
+      const itemsString = bundleSlots.join(', ');
+      addItemToCart({
+        id: `bundle-${Date.now()}`,
+        name: `Custom 4-Pack Box: [${itemsString}]`,
+        price: 499,
+        weight: '4 x 200g (800g)',
+        quantity: 1
+      });
+
+      showToast("Box Added to Bag!", "Enjoy your curated 15% discounted assortment.");
+      bundleSlots = [null, null, null, null];
+      updateBundleUI();
+      toggleCartDrawer(true);
+    }
+
+    function toggleCartDrawer(open) {
+      const drawer = document.getElementById('cartDrawer');
+      const backdrop = document.getElementById('cartDrawerBackdrop');
+
+      if (open) {
+        backdrop.classList.remove('pointer-events-none', 'opacity-0');
+        backdrop.classList.add('opacity-100');
+        drawer.classList.remove('translate-x-full');
+      } else {
+        backdrop.classList.add('pointer-events-none', 'opacity-0');
+        backdrop.classList.remove('opacity-100');
+        drawer.classList.add('translate-x-full');
+      }
+    }
+
+    function addItemToCart(item) {
+      const existing = cart.find(ci => ci.id === item.id);
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cart.push(item);
+      }
+      updateCartState();
+    }
+
+    function changeQuantity(id, delta) {
+      const item = cart.find(ci => ci.id === id);
+      if (!item) return;
+
+      item.quantity += delta;
+      if (item.quantity <= 0) {
+        cart = cart.filter(ci => ci.id !== id);
+      }
+      updateCartState();
+    }
+
+    function updateCartState() {
+      const container = document.getElementById('cartItemsContainer');
+      const countBadge = document.getElementById('cartCountBadge');
+      const drawerTag = document.getElementById('drawerCountTag');
+      const checkoutBtn = document.getElementById('openCheckoutBtn');
+      const subtotalEl = document.getElementById('cartSubtotal');
+      const totalEl = document.getElementById('cartTotal');
+      const shippingBar = document.getElementById('shippingBar');
+      const shippingMsg = document.getElementById('shippingTrackerMsg');
+      const shippingPercent = document.getElementById('shippingPercent');
+      const shippingFeeEl = document.getElementById('cartShippingFee');
+
+      const totalItems = cart.reduce((sum, i) => sum + i.quantity, 0);
+      countBadge.innerText = totalItems;
+      drawerTag.innerText = totalItems;
+
+      if (totalItems > 0) {
+        countBadge.classList.remove('scale-0');
+        countBadge.classList.add('scale-100');
+        checkoutBtn.disabled = false;
+      } else {
+        countBadge.classList.remove('scale-100');
+        countBadge.classList.add('scale-0');
+        checkoutBtn.disabled = true;
+      }
+
+      container.innerHTML = '';
+      if (cart.length === 0) {
+        container.innerHTML = `
+          <div class="py-16 text-center text-stone-400 space-y-3">
+            <i data-lucide="shopping-bag" class="w-12 h-12 mx-auto text-stone-300"></i>
+            <p class="font-bold text-stone-600">Your bag is crunchy-free.</p>
+            <p class="text-xs">Add roasted chips or build your custom 4-pack!</p>
+          </div>
+        `;
+      } else {
+        cart.forEach(item => {
+          const row = document.createElement('div');
+          row.className = "flex items-center justify-between p-3 rounded-xl bg-stone-50 border border-stone-200 gap-3";
+          row.innerHTML = `
+            <div class="flex-1 min-w-0">
+              <h4 class="text-xs font-bold text-stone-900 truncate">${item.name}</h4>
+              <p class="text-[11px] text-stone-500">${item.weight} • ₹${item.price} each</p>
+            </div>
+            
+            <div class="flex items-center gap-2">
+              <div class="flex items-center border border-stone-300 rounded-lg bg-white overflow-hidden">
+                <button onclick="changeQuantity('${item.id}', -1)" class="px-2 py-1 hover:bg-stone-100 text-stone-600 font-bold text-xs">-</button>
+                <span class="px-2 py-1 text-xs font-bold text-stone-800">${item.quantity}</span>
+                <button onclick="changeQuantity('${item.id}', 1)" class="px-2 py-1 hover:bg-stone-100 text-stone-600 font-bold text-xs">+</button>
+              </div>
+              <span class="text-xs font-extrabold text-stone-900 w-12 text-right">₹${item.price * item.quantity}</span>
+            </div>
+          `;
+          container.appendChild(row);
+        });
+      }
+
+      const subtotal = cart.reduce((sum, i) => sum + (i.price * i.quantity), 0);
+      subtotalEl.innerText = `₹${subtotal}`;
+
+      let shipping = subtotal >= 499 || subtotal === 0 ? 0 : 60;
+      if (subtotal >= 499) {
+        shippingBar.style.width = '100%';
+        shippingBar.className = "bg-brand-teal h-full rounded-full transition-all duration-300";
+        shippingMsg.innerText = "🎉 You unlocked FREE Delivery!";
+        shippingPercent.innerText = "100%";
+        shippingFeeEl.innerText = "FREE";
+        shippingFeeEl.className = "font-bold text-brand-teal";
+      } else {
+        const percent = Math.min(100, Math.round((subtotal / 499) * 100));
+        shippingBar.style.width = `${percent}%`;
+        shippingBar.className = "bg-brand-leaf h-full rounded-full transition-all duration-300";
+        shippingMsg.innerText = `Add ₹${499 - subtotal} more for FREE Delivery!`;
+        shippingPercent.innerText = `${percent}%`;
+        shippingFeeEl.innerText = "₹60";
+        shippingFeeEl.className = "font-bold text-stone-900";
+      }
+
+      let discountAmount = 0;
+      if (appliedCoupon === 'CRUNCH10' && subtotal > 0) {
+        discountAmount = Math.round(subtotal * 0.10);
+        document.getElementById('discountRow').classList.remove('hidden');
+        document.getElementById('cartDiscount').innerText = `-₹${discountAmount}`;
+      } else {
+        document.getElementById('discountRow').classList.add('hidden');
+      }
+
+      const total = Math.max(0, subtotal - discountAmount + shipping);
+      totalEl.innerText = `₹${total}`;
+      document.getElementById('checkoutTotalDisplay').innerText = `₹${total}`;
+
+      lucide.createIcons();
+    }
+
+    function applyCoupon() {
+      const code = document.getElementById('couponInput').value.trim().toUpperCase();
+      if (code === 'CRUNCH10') {
+        appliedCoupon = 'CRUNCH10';
+        showToast("Coupon Applied!", "10% festive discount added to your cart.");
+        updateCartState();
+      } else {
+        showToast("Invalid Code", "Please try using 'CRUNCH10' for 10% off.");
+      }
+    }
+
+    function openQuickView(prodId) {
+      const prod = snackProducts.find(p => p.id === prodId);
+      if (!prod) return;
+      activeQuickViewProduct = prod;
+
+      document.getElementById('modalTitle').innerText = prod.title;
+      document.getElementById('modalFlavor').innerText = prod.flavorNote;
+      document.getElementById('modalWeight').innerText = `Net Wt: ${prod.netWeight}`;
+      document.getElementById('modalPrice').innerText = `₹${prod.priceSingle}`;
+      document.getElementById('modalBadge').innerText = prod.badge;
+      
+      document.getElementById('modalEnergy').innerText = prod.nutrition.energy;
+      document.getElementById('modalProtein').innerText = prod.nutrition.protein;
+      document.getElementById('modalFat').innerText = prod.nutrition.fat;
+      document.getElementById('modalFiber').innerText = prod.nutrition.fiber;
+      document.getElementById('modalIngredients').innerText = prod.ingredients;
+
+      document.getElementById('quickViewModal').classList.remove('hidden');
+    }
+
+    function closeQuickView() {
+      document.getElementById('quickViewModal').classList.add('hidden');
+      activeQuickViewProduct = null;
+    }
+
+    function addModalProductToCart() {
+      if (!activeQuickViewProduct) return;
+      addItemToCart({
+        id: `${activeQuickViewProduct.id}-Single`,
+        name: `${activeQuickViewProduct.title} (Single)`,
+        price: activeQuickViewProduct.priceSingle,
+        weight: activeQuickViewProduct.netWeight,
+        quantity: 1
+      });
+      closeQuickView();
+      showToast("Added to Bag", activeQuickViewProduct.title);
+      toggleCartDrawer(true);
+    }
+
+    function openCheckoutModal() {
+      toggleCartDrawer(false);
+      document.getElementById('checkoutStep1').classList.remove('hidden');
+      document.getElementById('checkoutSuccess').classList.add('hidden');
+      document.getElementById('checkoutModal').classList.remove('hidden');
+    }
+
+    function closeCheckoutModal() {
+      document.getElementById('checkoutModal').classList.add('hidden');
+    }
+
+    function handleOrderSubmission(e) {
+      e.preventDefault();
+      
+      const totalAmount = document.getElementById('cartTotal').innerText;
+      const randomOrderId = '#MA-' + Math.floor(10000 + Math.random() * 90000);
+
+      document.getElementById('confirmedOrderId').innerText = randomOrderId;
+      document.getElementById('confirmedAmount').innerText = totalAmount;
+
+      document.getElementById('checkoutStep1').classList.add('hidden');
+      document.getElementById('checkoutSuccess').classList.remove('hidden');
+
+      cart = [];
+      updateCartState();
+    }
+
+    function resetAndContinueShopping() {
+      closeCheckoutModal();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function showToast(title, message) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toastTitle').innerText = title;
+      document.getElementById('toastMessage').innerText = message;
+
+      toast.classList.remove('opacity-0', 'translate-y-24');
+      toast.classList.add('opacity-100', 'translate-y-0');
+
+      setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', 'translate-y-24');
+      }, 3000);
+    }
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>
